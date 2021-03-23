@@ -107,10 +107,9 @@ export class LAppDelegate {
     gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
 
     if (!gl) {
-      alert('无法初始化WebGL。该浏览器不支持。')
       gl = null
 
-      document.body.innerHTML = '当前浏览器不支持canvas。'
+      //document.body.innerHTML = '当前浏览器不支持canvas。'
 
       // gl初期化失敗
       return false
